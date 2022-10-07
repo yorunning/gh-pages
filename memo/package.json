@@ -1,0 +1,15 @@
+{
+  "name": "memorandum",
+  "version": "2.0.0",
+  "description": "Memorandum powered by vuepress and themed by vuepress-theme-reco.",
+  "author": "Yorun <yorun@yorun.me>",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "start": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "dependencies": {
+    "vuepress": "2.0.0-beta.51",
+    "vuepress-theme-reco": "2.0.0-beta.41"
+  }
+}

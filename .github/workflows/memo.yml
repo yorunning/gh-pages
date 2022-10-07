@@ -1,18 +1,18 @@
-name: Deploy Docs
+name: Deploy Memo
 
 on:
   push:
     branches: main
-    paths: "docs/**"
+    paths: "memo/**"
   workflow_dispatch:
 
 jobs:
   deploy-gh-pages:
-    name: Deploy docs to gh pages
+    name: Deploy memo to gh pages
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: docs
+        working-directory: memo
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 16
           cache: npm
-          cache-dependency-path: docs/package-lock.json
+          cache-dependency-path: memo/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -33,8 +33,8 @@ jobs:
       - name: Deploy site
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          repository-name: yorunning/docs
+          repository-name: yorunning/memo
           branch: gh-pages
-          folder: docs/.vuepress/dist
+          folder: memo/.vuepress/dist
           token: ${{ secrets.ACCESS_TOKEN }}
           single-commit: true

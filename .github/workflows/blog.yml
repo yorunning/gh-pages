@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy-gh-pages:
-    name: Deploy docs to gh pages
+    name: Deploy blog to gh pages
     runs-on: ubuntu-latest
     defaults:
       run:
