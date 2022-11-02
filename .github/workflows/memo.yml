@@ -35,6 +35,6 @@ jobs:
         with:
           repository-name: yorunning/memo
           branch: gh-pages
-          folder: memo/.vuepress/dist
+          folder: memo/src/.vuepress/dist
           token: ${{ secrets.ACCESS_TOKEN }}
           single-commit: true
