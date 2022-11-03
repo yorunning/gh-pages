@@ -12,6 +12,7 @@ export const Navbar = navbar([
     children: [
       {
         text: "ArchLinux安装",
+        icon: "archlinux",
         link: "/archlinux/preinstallation",
       },
     ],

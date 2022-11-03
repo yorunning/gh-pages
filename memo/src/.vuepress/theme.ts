@@ -23,7 +23,7 @@ export default hopeTheme({
   footer: "Copyright © 2022-present Yorun",
   copyright: false,
 
-  iconAssets: "iconfont",
+  iconAssets: "//at.alicdn.com/t/c/font_3746206_8xqwnciqdog.css",
 
   plugins: {
     readingTime: {
