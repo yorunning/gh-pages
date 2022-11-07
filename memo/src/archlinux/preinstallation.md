@@ -5,11 +5,11 @@ date: 2022-10-24
 
 ### 1.制作安装盘
 
-[https://www.ventoy.net/cn/download.html](https://www.vento.net/cn/download.html)
+[https://www.ventoy.net/cn/download.html](https://www.ventoy.net/cn/download.html)
 
 ### 2.下载安装镜像
 
-[https://archlinux.org/download/](https://archlinux.org/donload/)
+[https://archlinux.org/download/](https://archlinux.org/download/)
 
 ### 3.BIOS 设置
 
@@ -40,4 +40,4 @@ Windows（可选）
 
 [AchLinuxTutorial](https://archlinuxstudio.github.io/ArchLinuxTutorial/#/)
 
-[archlinux 简明指南](https://arch.icekylin.online/)
+[ArchLinux 简明指南](https://arch.icekylin.online/)
