@@ -152,3 +152,8 @@ exit            # 退回安装环境
 umount -R /mnt  # 卸载新分区
 reboot          # 重启
 ```
+
+```bash
+systemctl start dhcpcd  # 立即启动dhcp
+ping www.baidu.com      # 测试网络连接
+```

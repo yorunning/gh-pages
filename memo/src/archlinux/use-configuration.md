@@ -84,3 +84,93 @@ SDL_IM_MODULE=fcitx
 ```bash
 sudo pacman -S packagekit-qt5
 ```
+
+### 8.sddm 设置中文
+
+```bash
+sudo vim /usr/lib/systemd/system/sddm.service
+```
+
+```
+Environment=LANG=zh_CN.UTF-8  # [Service]下添加
+```
+
+### 9.美化
+
+|   item   | package                                 |
+| :------: | :-------------------------------------- |
+|  theme   | Sweet Ambar Blue                        |
+|          | Sweet Mars                              |
+| widgets  | Window Title Applet                     |
+|          | Latte Spacer                            |
+|          | Latte Separator                         |
+|          | Better inline clock                     |
+|          | Netspeed Widget                         |
+|          | mediacontroller_plus                    |
+|          | plasma5-applets-virtual-desktop-bar-git |
+|    im    | fcitx5-skin-fluentdark-git              |
+|  refind  | refind-theme-regular-git                |
+| plymouth | plymouth-theme-arch-glow                |
+|          | plymouth-theme-arch-breeze-git          |
+|          | plymouth-theme-monoarch                 |
+
+#### 桌面美化
+
+```bash
+sudo pacman -S latte-dock kvantum  # 任务栏增强
+sudo pacman -S kvantum    # 窗口主题增强
+paru -S kwin-bismuth-bin  # 窗口平铺
+sudo pacman -S ksysguard  # Netspeed Widget依赖
+```
+
+#### refind 美化
+
+```bash
+paru -S refind-theme-regular-git  # 安装主题
+vim /boot/EFI/refind/refind.conf  # 配置
+```
+
+```
+timeout 5  # 启动菜单等待时间
+dont_scan_dirs ESP:/EFI/boot  # 忽略启动菜单引导项
+include themes/refind-theme-regular/theme.conf  # 设置主题
+```
+
+若主题图标不能正确识别显示，原因为[如果/boot 是单独分区](https://wiki.archlinux.org/title/REFInd#For_kernels_automatically_detected_by_rEFInd)，refind 无法猜测发行版。需要创建名为 **vmlinuz-linux.png** 和 **bootmgfw.png** 的图标到 **vmlinuz-linux** 和 **bootmgfw.efi** 对应的文件夹。
+
+[Arch Wiki](https://wiki.archlinux.org/title/REFInd)
+
+#### plymouth 美化
+
+```bash
+paru -S plymouth-git  # 安装Plymouth
+lspci -v | grep -A10 VGA | grep driver  # 查看内核驱动
+vim /etc/mkinitcpio.conf  # 编辑初始镜像配置，修改MODULES HOOKS
+vim /boot/EFI/refind/refind_linux.conf  # 附加内核参数
+```
+
+```
+quiet log_level=3 splash rd.udev.log_level=3 vt.global_cursor_default=0
+```
+
+```bash
+paru -S plymouth-theme-arch-glow  # 安装主题
+plymouth-set-default-theme -l     # 列出主题
+sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
+```
+
+[Arch Wiki](https://wiki.archlinux.org/title/Plymouth)
+
+### 10.常用软件
+
+| source | package                            |
+| :----: | :--------------------------------- |
+|  Arch  |                                    |
+|  AUR   | telegram-desktop-bin               |
+|        | icalingua++                        |
+|        | yesplaymusic                       |
+|        | netease-cloud-music                |
+|        | microsoft-edge-stable-bin          |
+|        | visual-studio-code-bin             |
+|        | intellij-idea-ultimate-edition-jre |
+|        | dbeaver-ee                         |
