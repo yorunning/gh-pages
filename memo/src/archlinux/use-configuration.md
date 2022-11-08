@@ -117,10 +117,10 @@ Environment=LANG=zh_CN.UTF-8  # [Service]下添加
 #### 桌面美化
 
 ```bash
-sudo pacman -S latte-dock kvantum  # 任务栏增强
-sudo pacman -S kvantum    # 窗口主题增强
-paru -S kwin-bismuth-bin  # 窗口平铺
-sudo pacman -S ksysguard  # Netspeed Widget依赖
+sudo pacman -S latte-dock  # 任务栏增强
+sudo pacman -S kvantum     # 窗口主题增强
+paru -S kwin-bismuth-bin   # 窗口平铺
+sudo pacman -S ksysguard   # Netspeed Widget依赖
 ```
 
 #### refind 美化
@@ -136,7 +136,7 @@ dont_scan_dirs ESP:/EFI/boot  # 忽略启动菜单引导项
 include themes/refind-theme-regular/theme.conf  # 设置主题
 ```
 
-若主题图标不能正确识别显示，原因为[如果/boot 是单独分区](https://wiki.archlinux.org/title/REFInd#For_kernels_automatically_detected_by_rEFInd)，refind 无法猜测发行版。需要创建名为 **vmlinuz-linux.png** 和 **bootmgfw.png** 的图标到 **vmlinuz-linux** 和 **bootmgfw.efi** 对应的文件夹。
+若启动菜单不能正确显示主题图标，原因为[如果/boot 是一个单独分区](https://wiki.archlinux.org/title/REFInd#For_kernels_automatically_detected_by_rEFInd)，refind 无法猜测发行版，从而显示了默认主题的图标。需要创建名为 **vmlinuz-linux.png** 和 **bootmgfw.png** 的图标到 **vmlinuz-linux** 和 **bootmgfw.efi** 对应的文件夹。
 
 [Arch Wiki](https://wiki.archlinux.org/title/REFInd)
 
