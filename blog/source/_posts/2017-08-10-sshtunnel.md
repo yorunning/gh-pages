@@ -2,6 +2,7 @@
 title: sshtunnel操作远程主机上的服务
 date: 2017-08-10 23:25:51
 categories:
+  - Programming
 ---
 
 有这样一个场景，A 主机上有一个爬虫程序，要把爬取的数据保存到 B 主机的数据库上。最先想到的就是`pymysql.connect(host='B主机的IP')`，但是有一个问题是要登录 B 主机后才能操作 B 主机的数据库。解决方案是使用端口绑定。

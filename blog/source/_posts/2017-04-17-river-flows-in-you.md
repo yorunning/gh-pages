@@ -2,6 +2,7 @@
 title: 一曲音乐，不同版本，不同感触
 date: 2017-04-17 14:23:43
 categories:
+  - Think
 ---
 
 # 《River Flows In You》

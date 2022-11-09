@@ -2,6 +2,7 @@
 title: Hello World
 date: 2017-04-15 16:38:37
 categories:
+  - Think
 ---
 
 ![hello-world](/images/hello-world/hello-world.jpg)

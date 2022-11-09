@@ -2,6 +2,7 @@
 title: django部署小记
 date: 2017-08-26 22:24:50
 categories:
+  - Programming
 ---
 
 这段时间用 django 开发了我的第一个网站，正好可以拿来学习一下如何部署，折腾了几天，大致走通了，赶忙记录下来。
