@@ -1,0 +1,12 @@
+[
+    {
+       "name":"clash_conf",
+       "url":"https://github.com/yorunning/clash_conf",
+       "desc":"Clash & Stash配置、规则集存档"
+    },
+    {
+       "name":"memo.yorun.me",
+       "url":"https://memo.yorun.me",
+       "desc":"个人备忘录"
+    }
+]
