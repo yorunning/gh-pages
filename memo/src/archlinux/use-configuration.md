@@ -163,14 +163,14 @@ sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
 
 ### 10.常用软件
 
-| source | package                            |
-| :----: | :--------------------------------- |
-|  Arch  |                                    |
-|  AUR   | telegram-desktop-bin               |
-|        | icalingua++                        |
-|        | yesplaymusic                       |
-|        | netease-cloud-music                |
-|        | microsoft-edge-stable-bin          |
-|        | visual-studio-code-bin             |
-|        | intellij-idea-ultimate-edition-jre |
-|        | dbeaver-ee                         |
+|  source   | package                            |
+| :-------: | :--------------------------------- |
+| archlinux | pacman-contrib                     |
+|    AUR    | telegram-desktop-bin               |
+|           | icalingua++                        |
+|           | yesplaymusic                       |
+|           | netease-cloud-music                |
+|           | microsoft-edge-stable-bin          |
+|           | visual-studio-code-bin             |
+|           | intellij-idea-ultimate-edition-jre |
+|           | dbeaver-ee                         |
