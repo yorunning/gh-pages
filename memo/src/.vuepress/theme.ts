@@ -17,6 +17,8 @@ export default hopeTheme({
   sidebar: Sidebar,
 
   pageInfo: ["Author", "Date", "Word", "ReadingTime"],
+  docsRepo: "yorunning/gh-pages",
+  docsDir: "memo/src",
   editLink: false,
 
   displayFooter: true,
