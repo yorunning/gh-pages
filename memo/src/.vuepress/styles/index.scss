@@ -1,1 +1,12 @@
 // place your custom styles here
+.blog-hero.fullscreen {
+  height: calc(100vh) !important;
+}
+
+.blog-hero {
+  margin-bottom: 0;
+}
+
+.slide-down-button {
+  display: none !important;
+}

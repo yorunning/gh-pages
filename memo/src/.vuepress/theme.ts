@@ -31,7 +31,7 @@ export default hopeTheme({
     readingTime: {
       wordPerMinute: 60,
     },
-    // Disable features you don't want here
+    
     mdEnhance: {
       align: true,
       attrs: true,

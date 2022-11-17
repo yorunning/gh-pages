@@ -6,6 +6,13 @@ export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
   title: "Yorun's Memorandum",
+
   theme,
+
+  alias: {
+    "@theme-hope/components/HomePage.js":
+      "@theme-hope/modules/blog/components/BlogHero.js",
+  },
+
   plugins: [searchPlugin()],
 });
