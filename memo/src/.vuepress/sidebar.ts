@@ -4,7 +4,6 @@ export const Sidebar = sidebar({
   "/archlinux/": [
     {
       text: "ArchLinux安装",
-      // prefix: "/archlinux/",
       children: [
         "preinstallation",
         "basic-installation",
