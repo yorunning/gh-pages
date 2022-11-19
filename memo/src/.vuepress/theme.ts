@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://yorun.me",
   },
 
-  logo: "/logo1.png",
+  logo: "/logo.png",
   repo: "https://github.com/yorunning/gh-pages/tree/main/memo",
 
   navbar: Navbar,
