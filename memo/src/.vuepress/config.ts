@@ -1,11 +1,15 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { searchPlugin } from "@vuepress/plugin-search";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
   title: "Yorun's Memorandum",
   theme,
-  plugins: [searchPlugin()],
+  plugins: [
+    searchProPlugin({
+      indexContent: true,
+    }),
+  ],
 });
