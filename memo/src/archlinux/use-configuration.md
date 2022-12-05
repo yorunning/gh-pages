@@ -146,7 +146,7 @@ include themes/refind-theme-regular/theme.conf  # 设置主题
 paru -S plymouth-git  # 安装Plymouth
 lspci -v | grep -A10 VGA | grep driver  # 查看内核驱动
 vim /etc/mkinitcpio.conf  # 编辑初始镜像配置，修改MODULES HOOKS
-vim /boot/EFI/refind/refind_linux.conf  # 附加内核参数
+vim /boot/refind_linux.conf  # 附加内核参数
 ```
 
 ```
