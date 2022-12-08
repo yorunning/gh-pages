@@ -20,7 +20,7 @@ export default hopeTheme({
   editLink: false,
 
   displayFooter: true,
-  footer: "Copyright © 2022-present Yorun",
+  footer: (() => "Copyright © 2022-" + new Date().getFullYear().toString() + " Yorun")(),
   copyright: false,
 
   iconAssets: "//at.alicdn.com/t/c/font_3746206_8xqwnciqdog.css",
