@@ -96,3 +96,11 @@
     display: none;
   }
 }
+
+.footer-wrapper {
+  padding: 0.75rem 2rem;
+}
+
+.arrow:not(.right) + .footer-wrapper {
+  padding: 0.75rem 2rem 0.75rem calc(var(--sidebar-width) + 2rem);
+}
