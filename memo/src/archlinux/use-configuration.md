@@ -166,6 +166,8 @@ sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
 |  source   | package                            |
 | :-------: | :--------------------------------- |
 | archlinux | pacman-contrib                     |
+|           | ranger                             |
+|           | ueberzug                           |
 |    AUR    | telegram-desktop-bin               |
 |           | icalingua++                        |
 |           | yesplaymusic                       |
