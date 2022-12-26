@@ -5,9 +5,21 @@ date: 2022-10-24
 
 ### 1.安装显卡驱动
 
+::: code-tabs#shell
+
+@tab x64
+
 ```bash
-sudo pacman -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-adeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau
 ```
+
+@tab x32
+
+```bash
+sudo pacman -S lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa-vdpau
+```
+
+:::
 
 ### 2.安装 aur 助手
 
@@ -21,7 +33,7 @@ makepkg -si
 ### 3.安装代理软件
 
 ```bash
-paru -S clash-for-windows-bin
+paru -S clash-for-windows-electron-bin clash-premium-bin
 ```
 
 ### 4.安装字体
@@ -97,22 +109,23 @@ Environment=LANG=zh_CN.UTF-8  # [Service]下添加
 
 ### 9.美化
 
-|   item   | package                                 |
-| :------: | :-------------------------------------- |
-|  theme   | Sweet Ambar Blue                        |
-|          | Sweet Mars                              |
-| widgets  | Window Title Applet                     |
-|          | Latte Spacer                            |
-|          | Latte Separator                         |
-|          | Better inline clock                     |
-|          | Netspeed Widget                         |
-|          | mediacontroller_plus                    |
-|          | plasma5-applets-virtual-desktop-bar-git |
-|    im    | fcitx5-skin-fluentdark-git              |
-|  refind  | refind-theme-regular-git                |
-| plymouth | plymouth-theme-arch-glow                |
-|          | plymouth-theme-arch-breeze-git          |
-|          | plymouth-theme-monoarch                 |
+|     item     | package                                 |
+| :----------: | :-------------------------------------- |
+|    theme     | Sweet Ambar Blue                        |
+|              | Sweet Mars                              |
+|   widgets    | plasma5-applets-window-title            |
+|              | plasma5-applets-window-buttons          |
+|              | plasma5-applets-latte-spacer            |
+|              | plasma5-applets-latte-separator         |
+|              | plasma5-applets-netspeed[_ksysguard_]   |
+|              | plasma5-applets-betterinlineclock-git   |
+|              | plasma5-applets-virtual-desktop-bar-git |
+|              | mediacontroller_plus                    |
+|      im      | fcitx5-skin-fluentdark-git              |
+|    refind    | refind-theme-regular-git                |
+| ~~plymouth~~ | ~~plymouth-theme-arch-glow~~            |
+|              | ~~plymouth-theme-arch-breeze-git~~      |
+|              | ~~plymouth-theme-monoarch~~             |
 
 #### 桌面美化
 
@@ -120,7 +133,6 @@ Environment=LANG=zh_CN.UTF-8  # [Service]下添加
 sudo pacman -S latte-dock  # 任务栏增强
 sudo pacman -S kvantum     # 窗口主题增强
 paru -S kwin-bismuth-bin   # 窗口平铺
-sudo pacman -S ksysguard   # Netspeed Widget依赖
 ```
 
 #### refind 美化
@@ -163,16 +175,20 @@ sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
 
 ### 10.常用软件
 
-|  source   | package                            |
-| :-------: | :--------------------------------- |
-| archlinux | pacman-contrib                     |
-|           | ranger                             |
-|           | ueberzug                           |
-|    AUR    | telegram-desktop-bin               |
-|           | icalingua++                        |
-|           | yesplaymusic                       |
-|           | netease-cloud-music                |
-|           | microsoft-edge-stable-bin          |
-|           | visual-studio-code-bin             |
-|           | intellij-idea-ultimate-edition-jre |
-|           | dbeaver-ee                         |
+|  source   | package                        |
+| :-------: | :----------------------------- |
+| archlinux | pacman-contrib                 |
+|           | ranger[_ueberzug_]             |
+|           | telegram-desktop               |
+|    AUR    | linuxqq-new                    |
+|           | wechat-uos                     |
+|           | qqmusic-electron               |
+|           | netease-cloud-music            |
+|           | yesplaymusic                   |
+|           | microsoft-edge-stable-bin      |
+|           | visual-studio-code-bin         |
+|           | intellij-idea-ultimate-edition |
+|           | dbeaver-ee                     |
+|           | clash-for-windows-electron-bin |
+|           | clash-premium-bin              |
+ 
