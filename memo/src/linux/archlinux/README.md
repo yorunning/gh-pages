@@ -1,5 +1,6 @@
 ---
 title: ArchLinux安装
+icon: archlinux
 ---
 
 - [安装前准备](preinstallation.md)

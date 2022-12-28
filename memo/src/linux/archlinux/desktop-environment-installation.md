@@ -1,5 +1,6 @@
 ---
 title: 桌面环境安装
+icon: article
 date: 2022-10-24
 ---
 

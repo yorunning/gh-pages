@@ -2,10 +2,13 @@ import { sidebar } from "vuepress-theme-hope";
 
 export const Sidebar = sidebar({
   "/": [
+    "",
     {
       text: "ArchLinux安装",
       icon: "archlinux",
-      prefix: "archlinux/",
+      link: "linux/archlinux/",
+      prefix: "linux/archlinux/",
+      // collapsible: true,
       children: [
         "preinstallation",
         "basic-installation",
@@ -14,19 +17,23 @@ export const Sidebar = sidebar({
         "dual-system",
       ],
     },
+    "linux/pacman",
   ],
 
-  "/archlinux/": [
-    {
-      text: "ArchLinux安装",
-      icon: "archlinux",
-      children: [
-        "preinstallation",
-        "basic-installation",
-        "desktop-environment-installation",
-        "use-configuration",
-        "dual-system",
-      ],
-    },
-  ],
+  // "/linux/": [
+  //   {
+  //     text: "ArchLinux安装",
+  //     icon: "archlinux",
+  //     link: "archlinux/",
+  //     prefix: "archlinux/",
+  //     children: [
+  //       "preinstallation",
+  //       "basic-installation",
+  //       "desktop-environment-installation",
+  //       "use-configuration",
+  //       "dual-system",
+  //     ],
+  //   },
+  //   "pacman",
+  // ],
 });

@@ -1,5 +1,6 @@
 ---
 title: 基础安装
+icon: article
 date: 2022-10-24
 ---
 

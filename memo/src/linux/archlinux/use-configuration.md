@@ -1,5 +1,6 @@
 ---
 title: 使用配置
+icon: article
 date: 2022-10-24
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 安装前准备
+icon: article
 date: 2022-10-24
 ---
 
