@@ -22,7 +22,7 @@ sudo pacman -S lib32-mesa lib32-vulkan-radeon lib32-libva-mesa-driver lib32-mesa
 
 :::
 
-### 2.安装 aur 助手
+### 2.安装 AUR 助手
 
 ```bash
 sudo pacman -S --needed base-devel git
@@ -46,7 +46,7 @@ paru -S ttf-meslo-nerd-font-powerlevel10k       # 终端字体
 paru -S noto-color-emoji-fontconfig             # 补全emoji
 ```
 
-### 5.配置 zsh
+### 5.配置 Zsh
 
 ```bash
 sudo pacman -S zsh zsh-completions zsh-autosuggestions zsh-syntax-highlightig zsh-history-substring-search zsh-theme-powerlevel10k
@@ -92,13 +92,7 @@ XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
 ```
 
-### 7.确保 Discover 可用
-
-```bash
-sudo pacman -S packagekit-qt5
-```
-
-### 8.sddm 设置中文
+### 7.SDDM 设置中文
 
 ```bash
 sudo vim /usr/lib/systemd/system/sddm.service
@@ -108,25 +102,25 @@ sudo vim /usr/lib/systemd/system/sddm.service
 Environment=LANG=zh_CN.UTF-8  # [Service]下添加
 ```
 
-### 9.美化
+### 8.美化
 
-|     item     | package                                 |
-| :----------: | :-------------------------------------- |
-|    theme     | Sweet Ambar Blue                        |
-|              | Sweet Mars                              |
-|   widgets    | plasma5-applets-window-title            |
-|              | plasma5-applets-window-buttons          |
-|              | plasma5-applets-latte-spacer            |
-|              | plasma5-applets-latte-separator         |
-|              | plasma5-applets-netspeed[_ksysguard_]   |
-|              | plasma5-applets-betterinlineclock-git   |
-|              | plasma5-applets-virtual-desktop-bar-git |
-|              | mediacontroller_plus                    |
-|      im      | fcitx5-skin-fluentdark-git              |
-|    refind    | refind-theme-regular-git                |
-| ~~plymouth~~ | ~~plymouth-theme-arch-glow~~            |
-|              | ~~plymouth-theme-arch-breeze-git~~      |
-|              | ~~plymouth-theme-monoarch~~             |
+| Item               | Package                                 |
+| :----------------- | :-------------------------------------- |
+| Global theme       | Sweet Ambar Blue                        |
+|                    | Sweet Mars                              |
+| Plasma applet      | plasma5-applets-window-title            |
+|                    | plasma5-applets-window-buttons          |
+|                    | plasma5-applets-latte-spacer            |
+|                    | plasma5-applets-latte-separator         |
+|                    | plasma5-applets-netspeed[_ksysguard_]   |
+|                    | plasma5-applets-betterinlineclock-git   |
+|                    | plasma5-applets-virtual-desktop-bar-git |
+|                    | mediacontroller_plus                    |
+| IM theme           | fcitx5-skin-fluentdark-git              |
+| Refind theme       | refind-theme-regular-git                |
+| ~~Plymouth theme~~ | ~~plymouth-theme-arch-glow~~            |
+|                    | ~~plymouth-theme-arch-breeze-git~~      |
+|                    | ~~plymouth-theme-monoarch~~             |
 
 #### 桌面美化
 
@@ -153,7 +147,7 @@ include themes/refind-theme-regular/theme.conf  # 设置主题
 
 [Arch Wiki](https://wiki.archlinux.org/title/REFInd)
 
-#### plymouth 美化
+#### ~~plymouth 美化~~
 
 ```bash
 paru -S plymouth-git  # 安装Plymouth
@@ -174,22 +168,22 @@ sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
 
 [Arch Wiki](https://wiki.archlinux.org/title/Plymouth)
 
-### 10.常用软件
+### 9.常用软件
 
-|  source   | package                        |
-| :-------: | :----------------------------- |
-| archlinux | pacman-contrib                 |
-|           | ranger[_ueberzug_]             |
-|           | telegram-desktop               |
-|    AUR    | linuxqq-new                    |
-|           | wechat-uos                     |
-|           | qqmusic-electron               |
-|           | netease-cloud-music            |
-|           | yesplaymusic                   |
-|           | microsoft-edge-stable-bin      |
-|           | visual-studio-code-bin         |
-|           | intellij-idea-ultimate-edition |
-|           | dbeaver-ee                     |
-|           | clash-for-windows-electron-bin |
-|           | clash-premium-bin              |
- 
+| Repository | Package                        |
+| :--------- | :----------------------------- |
+| Official   | packagekit-qt5                 |
+|            | libappindicator-gtk3           |
+|            | ranger[_ueberzug_]             |
+|            | telegram-desktop               |
+| AUR        | linuxqq-new                    |
+|            | wechat-uos                     |
+|            | qqmusic-electron               |
+|            | netease-cloud-music            |
+|            | yesplaymusic                   |
+|            | microsoft-edge-stable-bin      |
+|            | visual-studio-code-bin         |
+|            | intellij-idea-ultimate-edition |
+|            | dbeaver-ee                     |
+|            | clash-for-windows-electron-bin |
+|            | clash-premium-bin              |

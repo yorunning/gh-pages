@@ -4,7 +4,7 @@ icon: article
 date: 2022-10-24
 ---
 
-### 1.制作安装盘
+### 1.制作启动盘
 
 [https://www.ventoy.net/cn/download.html](https://www.ventoy.net/cn/download.html)
 

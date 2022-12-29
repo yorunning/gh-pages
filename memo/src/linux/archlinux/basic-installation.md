@@ -19,7 +19,7 @@ ls /sys/firmware/efi/efivars
 ### 3.连接网络（有线）
 
 ```bash
-ping www.baidu.com  # 测试网络连通性
+ping archlinux.org  # 测试网络连通性
 ```
 
 ### 4.更新系统时钟
@@ -156,5 +156,5 @@ reboot          # 重启
 
 ```bash
 systemctl start dhcpcd  # 立即启动dhcp
-ping www.baidu.com      # 测试网络连接
+ping archlinux.org      # 测试网络连接
 ```

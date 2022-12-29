@@ -18,7 +18,7 @@ passwd yorun                            # 设置密码
 EDITOR=vim visudo  # 编辑sudoers配置文件，去掉#%wheel ALL=(ALL) ALL行注释
 ```
 
-### 3.安装 plasma 桌面环境和 kde 软件
+### 3.安装桌面环境和软件
 
 ```bash
 pacman -S plasma-meta konsole dolphin ark kate gwenview vlc
@@ -30,7 +30,7 @@ pacman -S plasma-meta konsole dolphin ark kate gwenview vlc
 systemctl enable sddm
 ```
 
-### 5.开启 32 位支持库
+### ~~5.开启 32 位支持库~~
 
 ```bash
 vim /etc/pacman.conf  # 去掉[multilib]一节中的注释
