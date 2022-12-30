@@ -41,6 +41,6 @@ reboot                # 重启
 ### 6.网络设置
 
 ```bash
-sudo systemctl disable --now iwd
 sudo systemctl enable --now NetworkManager
+sudo pacman -Rs dhcpcd
 ```

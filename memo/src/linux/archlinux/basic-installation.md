@@ -81,7 +81,7 @@ Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch  # 中科大
 
 ```bash
 pacstrap /mnt base linux linux-firmware  # 基础包
-pacstrap /mnt dhcpcd iwd vim bash-completion  # 功能性包
+pacstrap /mnt dhcpcd vim bash-completion  # 功能性包
 ```
 
 ### 10.生成 fstab 文件

@@ -135,7 +135,7 @@ paru -S kwin-bismuth-bin   # 窗口平铺
 
 ```bash
 paru -S refind-theme-regular-git  # 安装主题
-vim /boot/EFI/refind/refind.conf  # 配置
+sudo vim /boot/EFI/refind/refind.conf  # 配置
 ```
 
 ```
@@ -153,8 +153,8 @@ include themes/refind-theme-regular/theme.conf  # 设置主题
 ```bash
 paru -S plymouth-git  # 安装Plymouth
 lspci -v | grep -A10 VGA | grep driver  # 查看内核驱动
-vim /etc/mkinitcpio.conf  # 编辑初始镜像配置，修改MODULES HOOKS
-vim /boot/refind_linux.conf  # 附加内核参数
+sudo vim /etc/mkinitcpio.conf  # 编辑初始镜像配置，修改MODULES HOOKS
+sudo vim /boot/refind_linux.conf  # 附加内核参数
 ```
 
 ```
