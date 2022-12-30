@@ -44,6 +44,8 @@ sudo pacman -S noto-fonts-cjk noto-fonts-emoji  # 系统字体
 sudo pacman -S ttf-fira-code                    # 编程字体
 paru -S ttf-meslo-nerd-font-powerlevel10k       # 终端字体
 paru -S noto-color-emoji-fontconfig             # 补全emoji
+paru -S ttf-ms-win11-auto-zh_cn                 # 网页字体
+sudo pacman -Rs gnu-free-fonts
 ```
 
 ### 5.配置 Zsh
