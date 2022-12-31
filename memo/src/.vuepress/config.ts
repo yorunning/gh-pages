@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { removePWAPlugin } from "vuepress-plugin-remove-pwa";
+// import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 
 export default defineUserConfig({
   base: "/",
@@ -13,5 +14,6 @@ export default defineUserConfig({
       indexContent: true,
     }),
     removePWAPlugin({}),
+    // autoCatalogPlugin({}),
   ],
 });
