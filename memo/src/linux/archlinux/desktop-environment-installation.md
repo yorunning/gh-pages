@@ -21,7 +21,7 @@ EDITOR=vim visudo  # 编辑sudoers配置文件，去掉#%wheel ALL=(ALL) ALL行�
 ### 3.安装桌面环境和软件
 
 ```bash
-pacman -S plasma-meta konsole dolphin ark kate gwenview vlc
+pacman -S plasma-meta konsole dolphin ark kate gwenview vlc spectacle
 ```
 
 ### 4.开启 display manager
