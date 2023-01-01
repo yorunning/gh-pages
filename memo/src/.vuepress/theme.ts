@@ -8,6 +8,7 @@ export default hopeTheme({
   author: {
     name: "Yorun",
     url: "https://yorun.me",
+    email: "yorun@yorun.me",
   },
 
   logo: "/logo.png",
@@ -20,7 +21,8 @@ export default hopeTheme({
   editLink: false,
 
   displayFooter: true,
-  footer: (() => "Copyright © 2022-" + new Date().getFullYear().toString() + " Yorun")(),
+  footer: (() =>
+    "Copyright © 2022-" + new Date().getFullYear().toString() + " Yorun")(),
   copyright: false,
 
   iconAssets: "//at.alicdn.com/t/c/font_3746206_bcbv3eyzazq.css",
@@ -29,7 +31,7 @@ export default hopeTheme({
     readingTime: {
       wordPerMinute: 60,
     },
-    
+
     mdEnhance: {
       align: true,
       attrs: true,
