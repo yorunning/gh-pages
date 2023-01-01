@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
-import { removePWAPlugin } from "vuepress-plugin-remove-pwa";
 import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 
 export default defineUserConfig({
@@ -13,7 +12,6 @@ export default defineUserConfig({
     searchProPlugin({
       indexContent: true,
     }),
-    removePWAPlugin({}),
     autoCatalogPlugin({
       frontmatter: (path) => {
         const frontmatterArgs = { title: "", icon: "" };
