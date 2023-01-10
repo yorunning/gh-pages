@@ -126,9 +126,10 @@ Environment=LANG=zh_CN.UTF-8  # [Service]下添加
 #### 桌面美化
 
 ```bash
-sudo pacman -S latte-dock  # 任务栏增强
-sudo pacman -S kvantum     # 窗口主题增强
-paru -S kwin-bismuth-bin   # 窗口平铺
+sudo pacman -S latte-dock       # 任务栏增强
+sudo pacman -S kvantum          # 窗口主题增强
+paru -S kwin-bismuth-bin        # 窗口平铺
+paru -S kwin-scripts-forceblur  # 全局模糊
 ```
 
 #### refind 美化
