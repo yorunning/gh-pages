@@ -98,9 +98,5 @@
 }
 
 .footer-wrapper {
-  transition: padding var(--transform-transition);
-
-  @media (min-width: 1440px) {
-    padding-right: 16rem;
-  }
+  padding: 0.75rem 2rem;
 }
