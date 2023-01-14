@@ -28,6 +28,6 @@ title: about
 
 <p style="text-indent: 2em;">AMD Ryzen 5700X + Radeon 6650XT 平台（驱动开源友好）</p>
 
-| ![](/images/about/desktop.png) | ![](/images/about/computer.jpg) |
+| ![](/images/about/desktop.png) | ![](/images/about/computer.png) |
 | :----------------------------: | :-----------------------------: |
 |            桌面环境            |            电脑硬件             |
