@@ -113,10 +113,10 @@ Environment=LANG=zh_CN.UTF-8  # [Service]下添加
 |                    | plasma5-applets-window-buttons          |
 |                    | plasma5-applets-latte-spacer            |
 |                    | plasma5-applets-latte-separator         |
-|                    | plasma5-applets-netspeed[_ksysguard_]   |
 |                    | plasma5-applets-betterinlineclock-git   |
 |                    | plasma5-applets-virtual-desktop-bar-git |
 |                    | mediacontroller_plus                    |
+|                    | network bandwidth monitor               |
 | IM theme           | fcitx5-skin-fluentdark-git              |
 | Refind theme       | refind-theme-regular-git                |
 | ~~Plymouth theme~~ | ~~plymouth-theme-arch-glow~~            |
@@ -126,10 +126,8 @@ Environment=LANG=zh_CN.UTF-8  # [Service]下添加
 #### 桌面美化
 
 ```bash
-sudo pacman -S latte-dock       # 任务栏增强
 sudo pacman -S kvantum          # 窗口主题增强
 paru -S kwin-bismuth-bin        # 窗口平铺
-paru -S kwin-scripts-forceblur  # 全局模糊
 ```
 
 #### refind 美化
