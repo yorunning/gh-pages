@@ -176,7 +176,7 @@ sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
 |            | libappindicator-gtk3           |
 |            | ranger[_ueberzug_]             |
 |            | telegram-desktop               |
-| AUR        | linuxqq-new                    |
+| AUR        | linuxqq                        |
 |            | wechat-uos                     |
 |            | qqmusic-bin                    |
 |            | netease-cloud-music            |
