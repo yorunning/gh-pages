@@ -34,7 +34,7 @@ makepkg -si
 ### 3.安装代理软件
 
 ```bash
-paru -S clash-for-windows-electron-bin clash-premium-bin
+paru -S clash-for-windows-bin
 ```
 
 ### 4.安装字体
@@ -178,12 +178,11 @@ sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
 |            | telegram-desktop               |
 | AUR        | linuxqq-new                    |
 |            | wechat-uos                     |
-|            | qqmusic-electron               |
+|            | qqmusic-bin                    |
 |            | netease-cloud-music            |
 |            | yesplaymusic                   |
 |            | microsoft-edge-stable-bin      |
 |            | visual-studio-code-bin         |
 |            | intellij-idea-ultimate-edition |
 |            | dbeaver-ee                     |
-|            | clash-for-windows-electron-bin |
-|            | clash-premium-bin              |
+|            | clash-for-windows-bin          |
