@@ -7,6 +7,7 @@
   padding-left: 0;
 
   .hero-info-wrapper {
+    max-width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -45,6 +46,7 @@
     h1 {
       margin: 0 auto;
       font-size: 2rem;
+      -webkit-text-fill-color: #eee;
 
       @media (max-width: 959px) {
         font-size: 1.875rem;
