@@ -2,6 +2,7 @@
 title: 基础安装
 icon: article
 date: 2022-10-24
+order: 2
 ---
 
 ### 1.禁用 reflector

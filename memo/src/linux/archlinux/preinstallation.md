@@ -2,6 +2,7 @@
 title: 安装前准备
 icon: article
 date: 2022-10-24
+order: 1
 ---
 
 ### 1.制作启动盘

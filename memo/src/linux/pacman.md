@@ -2,6 +2,7 @@
 title: Pacman常用操作
 icon: pacman
 date: 2022-12-28
+order: 2
 ---
 
 | Action                     | Arch                             | Debian                         |
