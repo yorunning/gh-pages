@@ -45,7 +45,6 @@ sudo pacman -S noto-fonts-cjk noto-fonts-emoji  # 系统字体
 sudo pacman -S ttf-fira-code                    # 编程字体
 paru -S ttf-meslo-nerd-font-powerlevel10k       # 终端字体
 paru -S noto-color-emoji-fontconfig             # 补全emoji
-paru -S ttf-ms-win11-auto-zh_cn                 # 网页字体
 ```
 
 ### 5.配置 Zsh
@@ -94,7 +93,7 @@ XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
 ```
 
-### 7.SDDM 设置中文
+### ~~7.SDDM 设置中文~~
 
 ```bash
 sudo vim /usr/lib/systemd/system/sddm.service
@@ -177,6 +176,7 @@ sudo plymouth-set-default-theme -R  arch-glow  # 切换主题
 |            | libappindicator-gtk3           |
 |            | ranger[_ueberzug_]             |
 |            | telegram-desktop               |
+|            | inkscape                       |
 | AUR        | linuxqq                        |
 |            | wechat-uos                     |
 |            | qqmusic-bin                    |
