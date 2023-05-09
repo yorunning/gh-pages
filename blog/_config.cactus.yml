@@ -20,13 +20,21 @@ nav:
   about: /about/
 
 # Links to your social media accounts.
-# The keys should correspond to Fontawesome icon names
+# The 'icon' keys should correspond to Fontawesome icon names
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
+# You can optionally add a 'label' key to set the title attribute on the link. 
+# 'icon' value will be used as title when 'label' is missing.
 social_links:
-  telegram: https://t.me/M_Power_bot
-  github: https://github.com/yorunning
-  mail: mailto:yorun@yorun.me
+  -
+    icon: telegram
+    link: https://t.me/M_Power_bot
+  -
+    icon: github
+    link: https://github.com/yorunning
+  -
+    icon: mail
+    link: mailto:yorun@yorun.me
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -178,6 +186,7 @@ umami_analytics:
   enabled: false
   id: e77e68be-f6e4-4br3-9365-2b76b57cd571
   host: https://analytics.domain.com
+  script_name: umami.js
 
 # Fill in you Gravatar email or hash if you want to use your gravatar as the
 # logo and/or favicons of you website.
@@ -191,6 +200,6 @@ cdn:
   enable: true
   jquery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
   clipboard: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js
-  font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
+  font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
   justified_gallery_css: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
