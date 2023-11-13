@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { Navbar } from "./navbar.js";
-import { Sidebar } from "./sidebar.js";
+import navbar from "./navbar.js";
+import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://memo.yorun.me",
@@ -8,14 +8,13 @@ export default hopeTheme({
   author: {
     name: "Yorun",
     url: "https://yorun.me",
-    email: "yorun@yorun.me",
   },
 
   logo: "/logo.png",
   repo: "https://github.com/yorunning/gh-pages/tree/main/memo",
 
-  navbar: Navbar,
-  sidebar: Sidebar,
+  navbar,
+  sidebar,
 
   pageInfo: ["Author", "Date", "Word", "ReadingTime"],
   editLink: false,
@@ -35,35 +34,61 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
+
+      // install chart.js before enabling it
+      // chart: true,
+
       codetabs: true,
-      container: true,
+
+      // insert component easily
+      // component: true,
+
       demo: true,
-      echarts: true,
+
+      // install echarts before enabling it
+      // echarts: true,
+
       figure: true,
-      flowchart: true,
-      gfm: true,
+
+      // install flowchart.ts before enabling it
+      // flowchart: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
+
+      // install katex before enabling it
+      // katex: true,
+
+      // install mathjax-full before enabling it
+      // mathjax: true,
+
       mark: true,
-      mermaid: true,
+
+      // install mermaid before enabling it
+      // mermaid: true,
+
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+
+      // install reveal.js before enabling it
+      // revealJs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+
       stylize: [
         {
-          matcher: "Recommanded",
+          matcher: "Recommended",
           replacer: ({ tag }) => {
             if (tag === "em")
               return {
                 tag: "Badge",
                 attrs: { type: "tip" },
-                content: "Recommanded",
+                content: "Recommended",
               };
           },
         },
@@ -72,7 +97,9 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
+
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
     },
   },
 });

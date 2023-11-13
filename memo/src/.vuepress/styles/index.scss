@@ -1,13 +1,13 @@
 // place your custom styles here
 
-.home.project {
+.vp-hero-info-wrapper {
   width: 100%;
   max-width: unset;
   padding-right: 0;
   padding-left: 0;
 
-  .hero-info-wrapper {
-    max-width: 100%;
+  .vp-hero-info {
+    max-width: 100% !important;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@
       }
     }
 
-    .description {
+    .vp-description {
       margin: 1.2rem auto 0;
       font-size: 20px;
       color: #eee;
@@ -76,7 +76,7 @@
       }
     }
 
-    .action-button {
+    .vp-actions {
       &.primary {
         color: #eee;
       }
@@ -94,7 +94,7 @@
     }
   }
 
-  .theme-hope-content {
-    display: none;
-  }
+  // .theme-hope-content {
+  //   display: none;
+  // }
 }

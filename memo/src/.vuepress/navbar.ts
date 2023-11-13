@@ -1,6 +1,6 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const Navbar = navbar([
+export default navbar([
   "/",
   {
     text: "Linux",
