@@ -7,11 +7,11 @@ categories:
 
 这段时间用 django 开发了我的第一个网站，正好可以拿来学习一下如何部署，折腾了几天，大致走通了，赶忙记录下来。
 
-#### 1.准备
+## 1.准备
 
 有一台可以通过外网访问的服务器，我这里使用的是阿里云的学生机，9 块 9 一个月，非常实惠。
 
-#### 2.创建一个拥有超级权限的新用户
+## 2.创建一个拥有超级权限的新用户
 
 ```
 # 创建一个新用户
@@ -26,14 +26,14 @@ root@localhost:~# su - yorun
 yorun@localhost:~$
 ```
 
-#### 3.更新软件源
+## 3.更新软件源
 
 ```
 # 以下都是在控制台下执行，后文省去控制台前缀
 yorun@localhost:~$ sudo apt update && sudo apt dist-upgrade -y
 ```
 
-#### 4.搭建 Python3 环境
+## 4.搭建 Python3 环境
 
 ```bash
 # 安装相关依赖
@@ -54,14 +54,14 @@ fi
 mkvirtualenv new_project
 ```
 
-#### 5.从 GitHub 下载项目以及安装项目所需依赖
+## 5.从 GitHub 下载项目以及安装项目所需依赖
 
 ```
 git clone 仓库地址
 pip install -r requirements.txt
 ```
 
-#### 6.配置 nginx 服务器
+## 6.配置 nginx 服务器
 
 ```
 # 修改Nginx的配置文件
@@ -83,7 +83,7 @@ location /static {
 }
 ```
 
-#### 7.安装 MySQL
+## 7.安装 MySQL
 
 ```
 sudo apt-get install mysql-server mysql-common mysql-client
@@ -96,7 +96,7 @@ pip install mysqlclient
 mysql -u root -p name < dump.txt
 ```
 
-#### 8.启动服务
+## 8.启动服务
 
 ```
 # 启动gunicorn动态服务器
